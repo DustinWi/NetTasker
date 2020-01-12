@@ -1,6 +1,6 @@
 # NetTasker #
 # Description #
-This is a work in progress and this tool is not intended for anyone's use but mine.  Use of the software and instructions provided by this repository does not grant a license, supported, or warranty.  Use at your own risk
+This is a work in progress and this tool is not intended for anyone's use but mine.  Use of the software and instructions provided by this repository does not grant a license, support, or warranty.  Use at your own risk
 
 # History #
 I've become a bit drained by the high price of integration and automation software.  So, I'm making a repository to hold some stuff that I've done over the years and to maybe bring it all together in one application if I can.  I'm am not a programmer by trade, and barely one by hobby.  Any code or scripts provided will be written in my current language of choice.  My current fad is Python3.  Hope you don't mind snakes.
