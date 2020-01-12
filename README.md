@@ -16,5 +16,5 @@ I've become a bit drained by the high price of integration and automation softwa
 4. Get an LDAP instance running
 4. Get Django LDAP authentication functioning
 
-= Instructions =
+# Instructions #
 I've not done anything yet.  So, there is nothing to see here.
