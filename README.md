@@ -29,44 +29,37 @@ The instructions provided below are the bare minimum to get the system up and ru
 
 ### Fedora 31 ###
 1. Install it.  That's all.
-'''
-$ sudo dnf -y install python3 python3-pip
-''' 
+`$ sudo dnf -y install python3 python3-pip`
+
 
 ## Setup Django ##
 1. You shouldn't need to install Django, it should all be self contained in this repository
 2. Update Django to set what hosts and subnets are allowed to connect to your system.
- - Edit __NetTasker/NetTasker/settings.py__.  Find __ALLOWED_HOSTS = []__ to contain all permitted hosts and subnets.
+ - Edit __NetTasker/NetTasker/settings.py__.  Edit __ALLOWED_HOSTS = []__ to contain all permitted hosts and subnets.
  - Example permitting the 192.168.1.100, 127.0.0.1 (localhost) and any host on the 10.0.0.0/24 subnet:
-'''
-ALLOWED_HOSTS = [
+`ALLOWED_HOSTS = [
  '192.168.1.100', 
  '10.0.0.\*',
  '127.0.0.1'
-]
-'''
+]`
 
 ## Setup Apache ##
 You can use whatever web server you want, I am used to Apache so I'm using Apache.  These instructions assume you are using Apache.
 
 ### Fedora 31 ###
 1. Install apache
-'''
-$ sudo dnf -y install httpd
-'''
+`$ sudo dnf -y install httpd`
+
 2. Setup Basic Apache Settings
  - As root, edit __/etc/httpd/conf/httpd.conf__
  - Search the file for the below items, and set their values as desired.
   - If you cannot find an item, add it to the bottom of the file
-'''
-ServerAdmin admin@example.com
+`ServerAdmin admin@example.com
 ServerName  example.com
 ServerTokens Prod
-KeepAlive On
-'''
+KeepAlive On`
+
 3. Enable Apache and set the service to run on startup
-'''
-$ sudo systemctl start httpd
+`$ sudo systemctl start httpd
 $ sudo systemctl enable httpd
-Created symlink /etc/systemd/system/multi-user.target.wants/httpd.service → /usr/lib/systemd/system/httpd.service.
-'''
+Created symlink /etc/systemd/system/multi-user.target.wants/httpd.service → /usr/lib/systemd/system/httpd.service.`
