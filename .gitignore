@@ -2,3 +2,11 @@
 NetTasker/static/
 
 NetTasker/NetTasker/settings.py
+
+# Swap Files
+*.swp
+
+# Compiled Python
+*.pyc
+
+NetTasker/NetTasker/secret_key.py

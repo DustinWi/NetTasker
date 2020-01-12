@@ -64,6 +64,22 @@ $ python manage.py collectstatic -c -l
 
 ```
 
+5. Create a file called __secret_key.py__ in /path/to/NetTasker/NetTasker/
+ - This will be the same directory that your settings.py resides in
+ - Make sure Apache has write access to __secret_key.py__
+ - In the commands below, replace __[user]__ with the username who owns the rest of the directory
+```
+$ cd /path/to/NetTask/NetTask/
+touch secret_key.py
+chmod 775 secret_key.py
+chown [user]:wheel secret_key.py
+```
+
+6. Update selinux to permit write access to the file
+```
+$ sudo semanage fcontext -a -t httpd_sys_rw_content_t '/path/to/NetTasker/NetTasker/secret_key.py'
+$ sudo restorecon -v 'secret_key.py'
+
 ## Setup Apache ##
 You can use whatever web server you want, I am used to Apache so I'm using Apache.  These instructions assume you are using Apache.
 
