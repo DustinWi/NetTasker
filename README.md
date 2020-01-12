@@ -57,6 +57,13 @@ ALLOWED_HOSTS = [
 STATIC_URL = '/path/to/static/file/location'
 ```
 
+4. Populate your static cache.
+```
+$ cd /path/to/NetTasker/
+$ python manage.py collectstatic -c -l
+
+```
+
 ## Setup Apache ##
 You can use whatever web server you want, I am used to Apache so I'm using Apache.  These instructions assume you are using Apache.
 
