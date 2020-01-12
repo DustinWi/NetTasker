@@ -79,6 +79,7 @@ chown [user]:wheel secret_key.py
 ```
 $ sudo semanage fcontext -a -t httpd_sys_rw_content_t '/path/to/NetTasker/NetTasker/secret_key.py'
 $ sudo restorecon -v 'secret_key.py'
+```
 
 ## Setup Apache ##
 You can use whatever web server you want, I am used to Apache so I'm using Apache.  These instructions assume you are using Apache.
