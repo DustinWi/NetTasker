@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+=t^l7u2%tn6c01$o%3l(v1sv^z!5cgcs%&3ya1fa0+6&-o0qf'
+SECRET_KEY = 'asdfoinsadofnasodfnoasidnfoasdnifoaisndfoasnfd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -118,4 +118,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/dustin/workspace/NetTasker/NetTasker/static/'
+STATIC_ROOT = '/path/to/NetTasker/NetTasker/static/'
